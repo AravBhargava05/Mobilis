@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 from flask import Flask, send_from_directory
 app = Flask(__name__)
+handler = app
 CORS(app)
 
 # Homepage route
@@ -52,5 +53,3 @@ def calculate_size():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
-handler = app
