@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Mobilis - Home{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section with Company Branding and Video Background -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome to Mobilis</h1>
+        <p class="hero-text">Empowering amputees in developing countries with functional, accessible prosthetics designed for independence.</p>
+        <a href="#patients" class="btn-primary">Learn More</a>
+    </div>
+    <video autoplay muted loop id="hero-video">
+        <source src="/static/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about">
+    <div class="container">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-text">
+            At Mobilis, we are committed to revolutionizing prosthetics for amputees in developing countries. Our mission is to provide affordable, self-fitting prosthetics to millions who need them, with a focus on independence and ease of use. We believe that access to high-quality prosthetics should not be limited by geography or socio-economic status.
+        </p>
+    </div>
+</section>
+
+<!-- Patients Section -->
+<section id="patients" class="section patients">
+    <div class="container">
+        <h2 class="section-title">Our Product</h2>
+        <p class="section-text">
+            <strong>For Amputees In Developing Countries</strong><br>
+            At Mobilis, we are driven by a singular mission: to make high-quality, functional prosthetics accessible to the millions of amputees in developing countries who have historically been left behind. With over 40 million amputees worldwide, only a small fraction have access to the prosthetics and healthcare they need. This lack of access is not just a challenge—it is a crisis that demands innovation and urgent action.
+        </p>
+        <p class="section-text">
+            <strong>A Prosthetic Designed for Independence</strong><br>
+            Unlike traditional prosthetics, which require skilled professionals to fit and adjust, the patented Mobilis Arm is designed for self-fitting. This unique feature allows amputees to use the arm independently, without relying on specialized healthcare services. In areas where medical resources are limited, this design ensures that amputees can receive and use the prosthetic without waiting for appointments or traveling long distances.
+        </p>
+        <br>
+        <a href="/problem" class="btn-primary">Learn More About the Problem</a>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section id="cta" class="section cta">
+    <div class="container">
+        <h2 class="section-title">Join Us in Making a Difference</h2>
+        <p class="section-text">
+            Mobilis is dedicated to providing life-changing prosthetics to those in need. Help us bring hope and independence to amputees around the world. Together, we can tranform lives.
+        </p>
+        <br>
+        <a href="/contact" class="btn-primary">Get Involved</a>
+    </div>
+</section>
+
+{% endblock %}
